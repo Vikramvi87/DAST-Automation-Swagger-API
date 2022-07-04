@@ -15,3 +15,9 @@ Steps after instantiate the container image:<br>
 8 - Start scan<br>
 9 - Wait scan finish<br>
 10 - Get report<br>
+<br>
+Project files:<br>
+<br>
+Dockerfile - create a image containing all tools to run automation.<br>
+scantdomfilteringfalse.scant - scan template file created with AppScan Standard (dom filtering disabled, login authentication disabled and no optimization set)<br>
+script.sh - bash script file to run automation.<br>
