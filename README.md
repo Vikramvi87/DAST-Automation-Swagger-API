@@ -17,7 +17,6 @@ Steps after instantiate the container image:<br>
 10 - Get report<br>
 <br>
 Project files:<br>
-<br>
 Dockerfile - create a image containing all tools to run automation. Tools: nodejs, npm, unzip, curl, HCL TrafficRecorder (proxy server), openapi2postmanv2, jq and newman.<br>
 scantdomfilteringfalse.scant - scan template file created with AppScan Standard (dom filtering disabled, login authentication disabled and no optimization set)<br>
 script.sh - bash script file to run automation.<br>
