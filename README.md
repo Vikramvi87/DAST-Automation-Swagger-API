@@ -2,7 +2,7 @@
 <br>
 Using this script, you can create a Automation where there is a API Swagger (Open API Spec 2 and 3) and there is the Swagger properties file. We get Swagger properties file and convert it using openapi2postmanv2 (https://github.com/postmanlabs/openapi-to-postman) to a Collection File and run the API calls (endpoint) with Newman (https://github.com/postmanlabs/newman).<br>
 <br>
-We can do that inside a Container image or through a Bash Script.<br>
+We can do that inside a Container image or through a Bash Script and upload to ASoC start the scan.<br>
 <br>
 Steps after instantiate the container image:<br>
 1 - Download json swagger<br>
