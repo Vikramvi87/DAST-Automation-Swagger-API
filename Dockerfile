@@ -6,4 +6,5 @@ RUN cd TrafficRecorder && unzip TrafficRecorder.Linux.zip; exit 0
 RUN chmod +x /TrafficRecorder/java/bin/java
 RUN npm i -g openapi-to-postmanv2
 RUN npm set strict-ssl false && npm install -g newman
+COPY scantdomfilteringfalse.scant /TrafficRecorder
 # ENTRYPOINT ["tail", "-f", "/dev/null"]
