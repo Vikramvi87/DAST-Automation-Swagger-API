@@ -21,7 +21,7 @@ sleep 10
 # Set proxy to 55555 port
 export http_proxy=http://localhost:55555/ && export https_proxy=http://localhost:55555/
 #API Authenticate
-curl -X POST "http://demo.testfire.net/api/login" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"username\": \"$user\", \"password\": \"$pass\"}"
+curl -X POST "$authEndpoint" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"username\": \"$user\", \"password\": \"$pass\"}"
 # Stop proxy
 curl -H 'Accept: application/json' 'http://localhost:8383/automation/StopProxy/55555'
 sleep 10
