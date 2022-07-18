@@ -22,6 +22,8 @@ sleep 10
 export http_proxy=http://localhost:55555/ && export https_proxy=http://localhost:55555/
 #API Authenticate
 curl -X POST "$authEndpoint" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"username\": \"$user\", \"password\": \"$pass\"}"
+# Reset proxy
+export http_proxy= && export https_proxy=
 # Stop proxy
 curl -H 'Accept: application/json' 'http://localhost:8383/automation/StopProxy/55555'
 sleep 10
